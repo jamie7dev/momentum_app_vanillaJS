@@ -8,7 +8,7 @@ let todos = [];
 function saveTodos(){
   localStorage.setItem("todos", JSON.stringify(todos)); //key: todos, value: array안에 들어오는 문자열
   //Json.stringify 어떤 Javascript 코드든 string으로 만들어 준다.
-  //값을 string으로 저장하고 싶을 때 사용
+  //값을 string으로 저장하고 싶을 때 사용 (localStorage에 array 저장 불가)
   //Json.parse("[1, 2, 3, 4]")//[1, 2, 3, 4] JS가 이해할 수 있는 array로 변경
 }
 
