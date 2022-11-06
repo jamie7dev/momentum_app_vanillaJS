@@ -5,24 +5,35 @@
     <meta name="viewport" contetn="width=device-width, initial-">
     <link rel="stylesheet" href="css/style.css" />
     <title>Momentum App</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
   </head>
   <body>
-    <form id="login-form" class="hidden">
-      <input type="text" placeholder="what is your name?" />
-      <button>Login</button>
-    </form>
-    <h2 id="clock">00:00:00</h2>
-    <h1 class="hidden" id="greeting"></h1>
-    <h1>Time Until Christmas Eve</h1>
-    <h2 class="js-clock"></h2>
-    <form id="todo-form">
-      <input type="text" placeholder="Write a To Do and Press Enter" required />
-    </form>
-    <ul id="todo-list"></ul>
-    <div id="quote">
+    <div id="quote" class="quote">
       <span></span>
       <span></span>
     </div>
+    <form id="login-form" class="hidden">
+      <input class="login" type="text" 
+      placeholder="what is your name?" 
+      onfocus="this.placeholder = ''" 
+      onblur="this.placeholder = 'what is your name?'"
+      required />
+      <button class="loginBtn">Login</button>
+    </form>
+    <h1 class="hidden" id="greeting"></h1>
+    <h2 id="clock">00:00:00</h2>
+    <div>
+      <h2>☃️ Time Until Christmas Eve 🎄</h2>
+      <h3 class="js-clock"></h3>
+    </div>
+    <form id="todo-form">
+      <input class="todoInput" type="text" 
+      placeholder="Write a To Do and Press Enter" 
+      onfocus="this.placeholder = ''"
+      onblur="this.placeholder = 'Write a To Do and Press Enter'"
+      required />
+    </form>
+    <ul id="todo-list"></ul>    
     <div id="weather">
       <span></span>
       <span></span>
@@ -34,6 +45,6 @@
     <script src="js/background.js"></script>
     <script src="js/todo.js"></script>
     <script src="js/weather.js"></script>
-    <script src="js/apikey.js"></script>
+    <script type="text/javascript" src="js/apikey.js"></script>
   </body>
 </html>

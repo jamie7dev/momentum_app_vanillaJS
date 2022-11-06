@@ -12,7 +12,7 @@ function onLoginSubmit(event){
   const username = loginInput.value;
   localStorage.setItem(USERNAME_KEY, username);
   // greeting.innerText = "Hello " + username;
-  greeting.innerText = `Hello ${username}`; //string과 변수 합치는 두 가지 방법
+  greeting.innerText = `Hello, ${username}`; //string과 변수 합치는 두 가지 방법
   //후자가 새로운 방법 ${변수명}
   greeting.classList.remove(HIDDEN_CLASSNAME);  //그 클래스명만 삭제
   
@@ -28,6 +28,6 @@ if (savedUsername === null) {
   loginForm.classList.remove(HIDDEN_CLASSNAME);
   loginForm.addEventListener("submit", onLoginSubmit);
 } else {
-  greeting.innerText = `Hello ${savedUsername}`;
+  greeting.innerText = `Hello, ${savedUsername}`;
   greeting.classList.remove(HIDDEN_CLASSNAME);  
 }

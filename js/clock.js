@@ -26,7 +26,7 @@ function getClock() {
   const hours = String(date.getHours()).padStart(2,"0");
   const minutes = String(date.getMinutes()).padStart(2,"0");
   const seconds = String(date.getSeconds()).padStart(2,"0");
-  clock.innerText = (`${hours}:${minutes}:${seconds}`);
+  clock.innerText = (`now ⏰ ${hours}:${minutes}:${seconds}`);
 }
 getClock();   //website가 load되자마자 getClock()즉시 호출 (없으면 1초 후부터 실행되므로)
 setInterval(getClock, 1000);
