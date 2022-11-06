@@ -31,6 +31,7 @@ img{
   border: 4px solid rgb(145, 222, 253);
   border-radius: 10px;
   background-color: white;
+  color: gray;
 }
 
 button{
