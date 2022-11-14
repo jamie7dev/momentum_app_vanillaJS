@@ -6,8 +6,9 @@ https://jamie7dev.github.io/momentum_app_vanillaJS/
 <br>
 
 구현 기능
-- 로그인(이름)
-- 로그아웃
-- to do list 생성 및 삭제
-- 위치 기반 실시간 날씨 제공(openweather api)
+- Log in(name)
+- Log out
+- create and delete to-do list
+- temperature and forecast on location(openweather api)
 - D-day 
+- random background image, 
